@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EnovaNetzamDownloader"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="300" Icon="/mysttic.ico">
+        Title="EnovaNetzamDownloader" Height="450" Width="300" Icon="/mysttic.ico">
     <Grid>
         <Label Content="Select version" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <ComboBox Name="VersionCB" HorizontalAlignment="Center" Margin="0,36,0,0" VerticalAlignment="Top" Width="280" IsEditable="True" TextBoxBase.TextChanged="VersionCB_TextChanged" />
