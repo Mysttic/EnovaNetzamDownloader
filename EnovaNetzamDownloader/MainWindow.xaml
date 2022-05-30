@@ -1,0 +1,27 @@
+﻿<Window x:Class="EnovaNetzamDownloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EnovaNetzamDownloader"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="300" Icon="/mysttic.ico">
+    <Grid>
+        <Label Content="Select version" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="VersionCB" HorizontalAlignment="Center" Margin="0,36,0,0" VerticalAlignment="Top" Width="280" IsEditable="True" TextBoxBase.TextChanged="VersionCB_TextChanged" />
+        <StackPanel x:Name="StackPanelSP" Margin="0,63,0,0" IsEnabled="False">
+            <Label Content="• Standard" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="InstalatorEnovaExeBT" Content="instalator enova365 (.exe)" Height="25" Width="280" Margin="0,0,0,10" Click="InstalatorEnovaExeBT_Click" />
+            <Button x:Name="InstalatorEnovaMsiBT" Content="instalator enova365 (.msi)" Height="25" Width="280" Margin="0,0,0,10" Click="InstalatorEnovaMsiBT_Click"/>
+            
+            <Label Content="• Multi" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="InstalatorEnovaZipBT" Content="instalator enova365 (.zip)" Height="25" Width="280" Margin="0,0,0,10" Click="InstalatorEnovaZipBT_Click"/>
+            
+            <Label Content="• Materials" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="UlotkaDoWersjiBT" Content="Ulotka do wersji" Height="25" Width="280" Margin="0,0,0,10" Click="UlotkaDoWersjiBT_Click"/>
+            <Button x:Name="KomunikatDlaKlientaBT" Content="Komunikat dla klienta" Height="25" Width="280" Margin="0,0,0,10" Click="KomunikatDlaKlientaBT_Click"/>
+            <Button x:Name="WykazZmianProgramistycznychBT" Content="Wykaz zmian programistycznych" Height="25" Width="280" Margin="0,0,0,10" Click="WykazZmianProgramistycznychBT_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
